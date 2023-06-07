@@ -49,6 +49,14 @@ class TestFibonacci {
 	//Analisis de Valor Limite
 	//0,20
 	@Test
+	public void LimitTest1() {
+		Fibonacci fib = new Fibonacci(1);
+		int test[] = {0};
+		
+		assertArrayEquals(fib.getListaFibonacci(),test);
+		
+	}
+	@Test
 	public void ZeroTest() {
 		Fibonacci fib = new Fibonacci(0);
 		int test[] =new int[1];
@@ -58,7 +66,7 @@ class TestFibonacci {
 		
 	}
 	@Test
-	public void LimitTest() {
+	public void LimitTest2() {
 		Fibonacci fib = new Fibonacci(20);
 		int test[] = {0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987, 1597, 2584, 4181};
 		assertArrayEquals(fib.getListaFibonacci(),test);
